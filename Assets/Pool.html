@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAI/AVS Staking Pool</title>
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+    <style>
+                /* CSS styles for the form */
+                form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        label {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        input[type="number"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #54278f;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #753bb5;
+        }
+
+          /* CSS styles for the graph */
+          #graph {
+            width: 500px;
+            height: 300px;
+            background-color: #1e043f;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        /* CSS styles for the pool page layout */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Avenir Next LT Pro'
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .graph {
+            width: 500px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .data {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+        }
+
+        h2, h4 {
+            color: #fff;
+        }
+           /* CSS styles for the unstaking  button */
+           #blue-button {
+            background-color: #2364aa;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        #blue-button:hover {
+            background-color: #3b8dd2;
+        }
+        .shorter {
+         width: 50px;
+         height: 50px;
+        }
+    </style>
+    <!-- Include necessary libraries or scripts -->
+</head>
+<body>
+<a href="navbar.html">
+<img class="shorter"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAPFBMVEUAAAD////AwMD7+/vk5ORCQkJ8fHyioqLn5+dgYGBBQUFeXl7j4+OkpKQSEhJiYmJMTEy1tbX19fVqamqki7GDAAAB5klEQVR4nO3d21LCQBBF0QyK4g1B//9frXgFkkwe6GT6HPf+gfSq7vBEVbqOiIiIiIiIiIiIiIiIiMTbv7aeYOl25aH1CMu2K6U8tR5iyXpgKcaH+gUsvof6A7Ql/gFND/UUaPlzcw40PNRLoN2hDoFmhzoGtDrUcaARcQpoc6jTQJMt1oClHFqPd3114Kb1eNcHUD2A6gFUD6B6ANUDqJ498BageADVA6geQPUAqgdQPYDqAVQPoHoA1QOoHkD1AKoHUD2A6gFUD6B6ANUDqB5A9erAY+vxrq8OLMfNuq0OXD17YLgwHTBa+NzaMywWmG+DwcKMwFBhwhMtocKUG4wUJgWGCfdZgWHCQ2vIZFHCbttaMlWYMC0xTpiVGChMSowU5iSGClMSY4UZicHChMRoYT5iuHCW+HazbvHCOeL7Ao9cuxniXev5AoIIUSKIDsRHf+I/2CJEByLvIkSJIEKUCCJEiSBClAgiRIkgQpQIIkSJIEKUCCJEiSBClAgiRIkgQpQIIkSJIDoQ+WsRRIlmiAZfWq2/iy+tpwupskUPYIXoApwk+gAniPetpwpthOi0wb4B0WuDfVt34AXREXhG9ASeEF2Bv0Rf4DfRGfhJ9AZ23cEdSERERERERERERERERHp9AEY8I2SVGY5EAAAAAElFTkSuQmCC" alt="back arrow">
+</a>   <div class="container">
+        <img class="shorter" src="https://s2.coinmarketcap.com/static/img/coins/200x200/4943.png" alt="DAI/AVS Logo">
+        <h2>DAI/AVS Staking Pool</h2> 
+   
+        
+        <!-- Graph -->
+        <div id="graph" class="graph"></div>
+
+        <!-- Data display -->
+        <div class="data">
+            <div>
+                <h4>Total Staked</h4>
+                <p id="total-staked">$100,000</p>
+            </div>
+            <div>
+                <h4>Staking Balance</h4>
+                <p id="staking-balance">$5,000</p>
+            </div>
+            <div>
+                <h4>APY</h4>
+                <p id="apy">100%</p>
+            </div>
+        </div>
+
+        <!-- Stake input form -->
+        <form>
+            <label for="stake-amount">Stake Amount:</label>
+            <input type="number" id="stake-amount" name="stake-amount" min="1" step="1">
+            <button type="button" id="stake-button">Stake</button>
+        </form>
+        <h5>Once You Stake you cannot unstake for 90 days.</h5>
+        <button type="button" id="blue-button">Unstake</button>
+    </div>
+
+    <!-- Include necessary scripts for graph rendering and data retrieval -->
+
+    <script>
+        // JavaScript code to create the graph
+        document.addEventListener("DOMContentLoaded", function() {
+            // Data for the graph
+            var data = [10, 20, 30, 25, 40, 35];
+
+            // Canvas element to draw the graph
+            var canvas = document.createElement("canvas");
+            canvas.width = 500;
+            canvas.height = 300;
+
+            // Get the 2D context of the canvas
+            var ctx = canvas.getContext("2d");
+
+            // Scale the graph to fit the canvas height
+            var scaleFactor = (canvas.height - 40) / Math.max(...data);
+
+            // Draw the graph
+            ctx.beginPath();
+            ctx.moveTo(20, canvas.height - (data[0] * scaleFactor));
+            for (var i = 1; i < data.length; i++) {
+                var newX = 20 + (80 * i);
+                var newY = canvas.height - (data[i] * scaleFactor);
+                ctx.lineTo(newX, newY);
+            }
+            ctx.strokeStyle = "#fff"; // Set the line color to white
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Add the canvas to the graph div
+            var graphDiv = document.getElementById("graph");
+            graphDiv.appendChild(canvas);
+        })
+
+             // Handle form submission
+             var stakeButton = document.getElementById("stake-button");
+            stakeButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent page refresh
+
+                // Get the staking amount
+                var stakeAmountInput = document.getElementById("stake-amount");
+                var stakeAmount = stakeAmountInput.value;
+
+                // Perform staking logic here
+                console.log("Staking amount: " + stakeAmount);
+
+                // Clear the input field
+                stakeAmountInput.value = "";
+            });
+               
+            // Handle Unstaking click
+            var unstakeButton = document.getElementById("blue-button");
+            blueButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent page refresh
+
+               // Perform unstaking logic here
+               console.log("Unstaking...");
+
+        });
+    </script>
+</body>
+</html>

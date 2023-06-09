@@ -1,0 +1,26 @@
+hhhh
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	deleted:    .gitattributes
+#	deleted:    .gitignore
+#	deleted:    LICENSE
+#	deleted:    README.md
+#	deleted:    frontend/.gitignore
+#	deleted:    frontend/.prettierrc
+#	deleted:    frontend/README.md
+#	deleted:    frontend/package-lock.json
+#	deleted:    frontend/package.json
+#	deleted:    hardhat.config.js
+#	deleted:    package-lock.json
+#	deleted:    package.json
+#	deleted:    scripts/deploy.js
+#	deleted:    scripts/issue-token.js
+#	deleted:    tasks/faucet.js
+#	deleted:    test/Token.js
+#

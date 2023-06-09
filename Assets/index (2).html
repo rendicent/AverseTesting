@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Averse Finance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="root.css" />
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                <img class="max-h-l2 w-auto" src="assets/images/logo.png" />
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
+            <a href="#Staking" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Staking</a>
+            <a href="#Ecosystem" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Ecosystem</a>
+            <a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Blog</a>
+            <a href="#" class="button bg-white black fw-600 no-underline mx-5">Launch App</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div class="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5">
+                <div class="inline-block bg-indigo indigo-lightest br-round px-3 py-1 mr-3 fs-s3">#DefiMadeSimple</div>
+                
+            </div>
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Averse is the go to Protocol <br /> for Staking assets.</h1>
+
+                <div class="br-8 mt-10 inline-flex">
+                    
+                    <button
+                        class="button bg-white black fw-600 no-underline mx-5 "> Launch App
+                        </button>
+                </div>
+                <div class="white opacity-20 fs-s3 mt-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features" class="p-10 md-p-l5">
+        <div class="flex flex-column md-flex-row mx-auto">
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img src="./assets/images/copy.png" alt="Whitepaper"><i
+                            data-feather="inbox" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Whitepaper</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Trusted professionals experienced with Defi and the decentralized finance industry.</div>
+                    <a href="#"
+                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+                </div>
+            </div>
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img src="assets/images/blockchain-icon.png" alt="Ecosystem"/><i
+                            data-feather="cpu" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Ecosystem</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50"> We work with Collaborators and Experienced Defi leaders ensuring functionality of the Protocol.</div>
+                    <a href="#"
+                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+                </div>
+            </div>
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img src="assets/images/cyber-security.png" alt="security image"/><i
+                            data-feather="database" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Security</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">We work with professional Auditors to ensure the  security of the protocol.</div>
+                    <a href="#"
+                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Read</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider -->
+    <section class="relative bg-indigo-lightest-10 " id="Staking">
+        <div id="slider-1">
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <h2 class="white fs-l3 fw-900">Stake your assets, Earn rewards.</h2>
+                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Stake your Assets in pools for rewards in the form of the Averse Token,
+                  </p>
+                <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">Stake</a>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- big text -->
+    <section class="p-10 md-py-10" id="Ecosystem">
+        <div class="w-100pc md-w-70pc mx-auto py-10">
+            <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
+                 <span class="border-b bc-indigo bw-4"> </span> 
+                A Ecosystem of professionals. </h2>
+        </div>
+        <img src="assets/images/AverseEco.png" alt="ecosystem">
+    </section>
+
+    <!-- product options -->
+   
+
+    
+    <!-- testimonials -->
+    
+    <!-- featured blog -->
+    
+
+    <!-- subscribe -->
+    <section class="p-10 md-p-l5">
+        <div class="br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center">
+            <div class="w-100pc md-w-33pc">
+                <h2 class="white fs-m4 fw-800">Try Averse Today.</h2>
+                <p class="fw-600 indigo-lightest opacity-40"> Averse Protocol offers rewards in exchange for staked Assets. With No Significant Fees.</p>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="flex my-5">
+                   
+                    <button
+                        class="button bg-white black fw-600 no-underline mx-5 "> Launch Protocol
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+        <div class="flex flex-wrap">
+            <div class="md-w-25pc mb-10">
+                <img src="assets/images/logo.png" class="w-l5" alt="">
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                    <p>The Averse Protocol is a decentralized Defi staking protocol built on The Polygon Network. </p>
+                    <br>
+                    <p>© 2023 Averse Protocol.</p>
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="flex justify-around">
+                    <div class="w-33pc md-px-10 mb-10">
+                        <h5 class="white">Protocol</h5>
+                        <ul class="list-none mt-5 fs-s2">
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline"> Staking
+                                    </a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Documentation</a>
+                            </li>
+                            <li class="my-3"><a href="#"
+                                    class="white opacity-70 no-underline hover-underline">Contact</a></li> <!--Put email pop up before production.-->
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">DefiLlama</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-33pc md-px-10 mb-10">
+                        <h5 class="white">Token</h5>
+                        <ul class="list-none mt-5 fs-s2">
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline"> Coinmarketcap
+                                    </a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Coingecko</a>
+                            </li>
+                            <li class="my-3"><a href="#"
+                                    class="white opacity-70 no-underline hover-underline">Whitepaper</a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Medium</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-33pc md-px-10 mb-10">
+                        <h5 class="white">Community</h5>
+                        <ul class="list-none mt-5 fs-s2">
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline"> Forum
+                                    </a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Twitter</a>
+                            </li>
+                            <li class="my-3"><a href="#"
+                                    class="white opacity-70 no-underline hover-underline">Telegram</a></li>
+                            <li class="my-3"><a href="#" class="white opacity-70 no-underline hover-underline">Github</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100pc md-w-25pc">
+                
+                <div class="flex justify-around my-8">
+                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><img src="assets/images/discord.svg" alt="discord"
+                         <i
+                            data-feather="twitter" class="absolute-center h-4"></i></a>
+                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><img src="assets/images/reddit.svg" alt="reddit"
+                   <i
+                            data-feather="facebook" class="absolute-center h-4"></i></a>
+                    <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><img src="assets/images/instagram.svg" alt="instagram"
+                        <i
+                            data-feather="instagram" class="absolute-center h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="" target="_blank" > <img src="assets/images/copy.png" alt="Whitepaper"
+        <i class="w-4" data-feather="download"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Averse Finance</title>
+	<link href="Pool.html"
+  <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+                
+	<style>
+      
+                
+
+      
+		body {
+			background-color: #000;
+			color: #fff;
+      font-family: 'Avenir Next LT Pro', sans-serif;                                  
+			margin: 0;
+			padding: 0;
+      
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 50px;
+			padding: 0 20px;
+		}
+
+		.card {
+			width: 30%;
+			background-color: #111;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+			margin-bottom: 20px;
+		}
+
+		.card-title {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		.card-description {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		.card-details {
+			margin-bottom: 10px;
+		}
+
+		.card-details span {
+			font-weight: bold;
+		}
+
+		.card-button {
+	    
+      --p: 262.35 80.315% 50.196%;
+      --tw-text-opacity: 1;
+      color: hsl(var(--pc)/var(--tw-text-opacity));
+     --tw-border-opacity: 1;
+      border-color: hsl(var(--p)/var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+			background-color: hsl(var(--p)/var(--tw-bg-opacity));
+			border-radius: 50px;
+			padding: 10px 30px;
+			font-size: 18px;
+			transition: all 0.3s ease;
+			display: inline-flex;
+  --rounded-btn: 0.5rem;
+    flex-shrink: 0;
+    cursor: pointer;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    border-color: hsl(var(--n)/var(--tw-border-opacity));
+    text-align: center;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    border-radius: var(--rounded-btn,.5rem);
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    line-height: 1em;
+    min-height: 3rem;
+    font-weight: 600;
+	border-color: hsl(var(--p)/var(--tw-border-opacity));
+}
+    .shorter{
+		
+		width: 25px;
+		height: 25px;
+		
+	}
+
+
+		.card-button:hover {
+			background-color: #5407ef;
+			cursor: pointer;
+			border-color: #5407ef;
+		}
+
+		.footer {
+			background-color: #111;
+			text-align: center;
+			padding: 20px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+
+		.footer p {
+			margin: 0;
+			font-size: 14px;
+		}
+
+		.protocol-image {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<h2 class="card-title">DAI/AVS Staking Pool</h2>
+			<p class="card-description">Stake your DAI and earn AVS tokens with our DAI/AVS staking pool.</p>
+			<div class="card-details">
+				<span>Total Staked:</span> $50,000<br>
+				<span>APY:</span> 10%<br>
+				<span>Rewards:</span> 2 AVS per day<br>
+				<span>Lock Time:</span> 30 days
+			</div>
+			<img class="shorter" src="https://s2.coinmarketcap.com/static/img/coins/200x200/4943.png" alt="DAI/AVS Logo">
+			<button  id="buttonrefer"  class="card-button" 
+			
+			<a href="#" class="">Stake now</a> </button>
+		</div>
+		<div class="card">
+			<h2 class="card-title">USDC/AVS Staking Pool</h2>
+			<p class="card-description">Stake your USDC and earn AVS tokens with our USDC/AVS staking pool.</p>
+			<div class="card-details">
+        <span>Total Staked:</span> $100,000<br>
+				<span>APY:</span> 8%<br>
+				<span>Rewards:</span> 1.5 AVS per day<br>
+				<span>Lock Time:</span> 60 days
+			</div>
+			<img class="shorter" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="USDC/AVS Logo">
+			 <button id="buttonreferred" class="card-button"
+			<a href="#" class="">Stake now</a>
+			</button>
+		</div>
+		<div class="card">
+			<h2 class="card-title">MATIC/AVS Staking Pool</h2>
+			<p class="card-description">Stake your MATIC and earn AVS tokens with our MATIC/AVS staking pool.</p>
+			<div class="card-details">
+				<span>Total Staked:</span> $75,000<br>
+				<span>APY:</span> 12%<br>
+				<span>Rewards:</span> 2.5 AVS per day<br>
+				<span>Lock Time:</span> 45 days
+			</div>
+			<img class="shorter" src="https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png" alt="MATIC/AVS Logo">
+			<button id="buttonreferral" class="card-button"
+			<a href="#" class="">Stake now</a>
+			</button>
+		</div>
+	</div>
+     
+	<footer class="footer">
+		<img src="https://via.placeholder.com/50" alt="Protocol Image" class="protocol-image">
+		<p>© 2023 Averse Finance. All rights reserved.</p>
+	</footer>
+	<script>
+
+		// JavaScript code to handle button click event
+        document.getElementById('buttonrefer').addEventListener('click', function() {
+            window.location.href = 'Pool.html';
+        });
+		document.getElementById('buttonreferred').addEventListener('click', function() {
+            window.location.href = 'Pool2.html';
+        });
+		document.getElementById('buttonreferral').addEventListener('click', function() {
+            window.location.href = 'Pool3.html';
+        });
+	</script>
+</body>
+</html>
+

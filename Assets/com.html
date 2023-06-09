@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .items-center {
+         align-items: center;
+      }
+
+    .flex {
+    display: flex;
+    }
+    .flex-col {
+    flex-direction: column;
+}
+.bg-main-transparent-gradient {
+    background-image: linear-gradient(117.06deg,rgb(137 60 253 / 49%),rgb(138 13 233 / 34%) 101.95%)
+    
+}
+.border-\[\#4d6c90\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(137 60 253/var(--tw-border-opacity));
+}
+
+.w-full {
+    width: 100%;
+}
+.rounded-4xl {
+    border-radius: 2.1875rem;
+}
+
+.pb-9 {
+    padding-bottom: 2.25rem;
+}
+
+.pt-12 {
+    padding-top: 3rem;
+}
+.border {
+    border-width: 1px;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+    </style>
+  </head>
+  <body>
+    <div
+      class="rounded-4xl p-2 bg-main-transparent-gradient text-white border border-[#4d6c90] flex flex-col items-center pb-9 pt-12 px-8 w-full sm:px-11 md:w-max"
+    >
+      <div class="flex items-center">
+        <button
+          class="font-nunito md:text-sm font-bold transform-gpu ease-in-out active:scale-110 duration-150 flex flex-row items-center disabled:brightness-100 text-sm text-center focus:outline-none justify-center hover:brightness-125 flex-nowrap focus:none rounded-full disabled:bg-disabled bg-primary hover:bg-primary text-white px-10 py-4 w-full shadow-glow-primary md:px-24"
+        >
+          <div
+            class="font-nunito text-lg flex flex-row gap-3 items-center font-extrabold"
+          >
+            <svg
+              width="16"
+              height="18"
+              viewBox="0 0 15 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.48635 12.2498C8.09508 12.2498 7.77686 11.9317 7.77686 11.5405C7.77686 11.1492 8.09508 10.831 8.48635 10.831H13.1362C13.3815 10.831 13.5812 10.6316 13.5812 10.3864V1.86345C13.5812 1.61827 13.3816 1.41885 13.1362 1.41885H8.48635C8.09508 1.41885 7.77686 1.10062 7.77686 0.709346C7.77686 0.318146 8.09508 0 8.48635 0H13.1362C14.1639 0 15 0.835946 15 1.86345V10.3864C15 11.4138 14.164 12.2498 13.1362 12.2498H8.48635Z"
+                fill="white"
+              ></path>
+              <path
+                d="M5.59298 10.7116C5.40352 10.7116 5.22533 10.6378 5.09138 10.5038C4.95735 10.3698 4.88355 10.1917 4.88355 10.0022C4.88355 9.81269 4.95735 9.63463 5.09138 9.50061L7.75793 6.83384H0V5.41483H7.75793L5.09138 2.74799C4.95735 2.61411 4.88355 2.43606 4.88355 2.24654C4.88355 2.05701 4.95735 1.87904 5.09138 1.74486C5.22533 1.61099 5.40345 1.53711 5.59305 1.53711C5.7825 1.53711 5.96055 1.61091 6.0945 1.74486L9.97223 5.62274C10.1063 5.75661 10.18 5.93481 10.1801 6.12434C10.18 6.31379 10.1063 6.49191 9.97223 6.62594L6.0945 10.5037C5.96063 10.6378 5.78258 10.7116 5.59298 10.7116Z"
+                fill="white"
+              ></path></svg
+            >Connect
+          </div>
+        </button>
+      </div>
+      <a
+        class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row pt-5 underline"
+        href="/dashboard"
+        >Continue without connecting</a
+      >
+      <div class="font-nunito md:text-sm text-base pt-10 font-bold">
+        Don't have a wallet yet?
+      </div>
+      <a
+        class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row text-primary underline"
+        target="_blank"
+        href="https://metamask.io/download.html"
+        >Get one with Metamask</a
+      >
+    </div>
+  </body>
+</html>
