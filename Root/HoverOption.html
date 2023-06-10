@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar Options on Hover</title>
+  <style>
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+      display: flex; /* Use flexbox for layout */
+      justify-content: space-between; /* Spread elements horizontally */
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .navbar li:hover ul,
+    .navbar ul:hover {
+      display: block;
+    }
+
+    .navbar ul li {
+      display: block;
+      position: relative;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      position: relative;
+    }
+
+    .navbar ul ul {
+      display: none;
+      position: absolute;
+      top: 100%; /* Connect the options box to the element */
+      left: 0;
+      background-color: #555;
+      border-radius: 5px;
+      padding: 10px;
+      min-width: 150px;
+    }
+
+    .navbar ul li:hover > ul,
+    .navbar ul ul:hover {
+      display: block;
+    }
+
+    /* Arrow SVG styles */
+    .navbar li:not(:first-child) > a::after {
+      display: none;
+    }
+
+    .navbar li:first-child > a::after {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M1.66 4.41L6 8.75l4.34-4.34a.996.996 0 1 0-1.41-1.41L6 6.94 2.07 3a.996.996 0 1 0-1.41 1.41z"/></svg>');
+      position: absolute;
+      top: calc(50% - 6px);
+      right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar li:first-child:hover > a::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .navbar ul ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 5px 10px;
+    }
+
+    .navbar ul ul li a:hover {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li>
+        <a href="#">Element 1</a>
+        <ul>
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="#">Element 2</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Element 3</a></li>
+    </ul>
+  </div>
+</body>
+</html>
