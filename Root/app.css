@@ -21,10 +21,11 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
 .items-center {
     align-items: center;
 }
+
+
 
 .flex {
     display: flex;
@@ -234,4 +235,28 @@ img, video {
 }
 .relative {
     position: relative;
+}
+
+:root,body {
+    font-size: 16px
+}
+body {
+    margin: 0;
+    line-height: inherit;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+@media (min-width: 768px){
+.md\:w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }

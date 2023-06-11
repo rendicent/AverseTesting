@@ -1,0 +1,14 @@
+The App Problem has something to do with the webkit and maxcontent on a mediaquery of 768 px min 
+@media (min-width: 768px)
+.md\:w-max {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+@media (min-width: 640px)
+.sm\:px-11 {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+}
+
+and something to do with w-full being crossed out or not good luck.
