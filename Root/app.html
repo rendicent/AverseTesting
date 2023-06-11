@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.cdnfonts.com/css/avenir-next-lt-pro" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap">
+  <link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="app.css">
+  <link rel="icon" href="Pictures/triangle.ico"/>
+  <title>Averse Finance</title>
+  <style data-href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap">@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDDshRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmRTA.woff) format('woff')}@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:200;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOOaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIMeaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Nunito';font-style:normal;font-weight:800;font-display:swap;src:url(https://fonts.gstatic.com/s/nunito/v25/XRXV3I6Li01BKofINeaBTMnFcQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+  <style>.ch2-style-light .ch2-btn-primary, .ch2-style-dark .ch2-btn-primary { background: #f9564f}.ch2-style-light .ch2-btn-primary:hover, .ch2-style-dark .ch2-btn-primary:hover { background: #f9564f; box-shadow: 0px 0px 20px 0 #f9564f66; }.ch2-style-light .ch2-switch input:checked + label, .ch2-style-dark .ch2-switch input:checked + label { background: #f9564f }.ch2-style-light.ch2-icon a:hover svg { border: 2px solid #f9564f; fill: #f9564f }.ch2-style-dark.ch2-icon a:hover svg { border: 2px solid #f9564f; background: #f9564f }@media (max-width: 800px) {.ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(1)::before { content: 'Name: '; }.ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(2)::before { content: 'Hostname: '; }.ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(3)::before { content: 'Path: '; }.ch2-settings-declaration table tbody tr td:not([colspan]):nth-child(4)::before { content: 'Expiry: '; }}</style>
+ <style>
+    body { /*
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0; */
+    }
+
+    .rounded-full {
+      position: relative;
+      border-radius: 9999px;
+      border: none;
+      overflow: hidden;
+    }
+
+    .bg-purple {
+      background-color: #551a8b; /* Darker purple */
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 16px 40px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .bg-purple::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(85, 26, 139, 0.5);
+      opacity: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      z-index: -1;
+      transition: opacity 0.3s ease-in-out;
+      animation: radiate 1.5s infinite;
+    }
+
+    .bg-purple:hover::before {
+      opacity: 1;
+    }
+
+    @keyframes radiate {
+      0% {
+        transform: scale(0.5);
+      }
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+
+    .items-center {
+         align-items: center;
+    }
+
+    .flex {
+    display: flex;
+    }
+
+    .flex-col {
+    flex-direction: column;
+}
+
+.bg-main-transparent-gradient {
+
+    background-image: linear-gradient(117.06deg,rgb(137 60 253 / 49%),rgb(138 13 233 / 34%) 101.95%)
+
+}
+
+.border-\[\#4d6c90\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(137 60 253/var(--tw-border-opacity));
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-4xl {
+    border-radius: 2.1875rem;
+}
+
+.pb-9 {
+    padding-bottom: 2.25rem;
+}
+
+.pt-12 {
+    padding-top: 3rem;
+}
+
+.border {
+    border-width: 1px;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+.md\:px-0 {
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+
+.h-\[70vh\] {
+    height: 70vh;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.fixed {
+    position: fixed;
+}
+  </style>
+</head>
+<body>
+<nav class="z-1 w-full max-w-screen-xl">
+ <div class=" flex items-center mb-8 mt-3 py-4 md:px-4 lg:px-14">
+  <img width="150px" height="100" class="w-40" src="Pictures/logo.png" alt="Logo">
+ </div>
+</nav>
+
+ <div class="h-[70vh] fixed flex flex-col items-center justify-center place-content-center px-4 w-full max-w-screen-xl text-white md:px-0"><div></div><div class="font-qanelas-soft md:text-3xl text-xl mb-4 text-center font-extrabold">Connect your wallet</div>
+ <div class="rounded-4xl p-2 bg-main-transparent-gradient text-white border border-[#4d6c90] flex flex-col items-center pb-9 pt-12 px-8 w-full sm:px-11 md:w-max">
+  <div class="flex items-center ">
+    <button class="font-nunito md:text-sm font-bold transform-gpu ease-in-out active:scale-110 duration-150 flex flex-row items-center disabled:brightness-100 text-sm text-center focus:outline-none justify-center hover:brightness-125 flex-nowrap focus:none rounded-full disabled:bg-disabled bg-primary hover:bg-primary text-white px-10 py-4 w-full shadow-glow-primary md:px-24">
+      <div class="font-nunito text-lg  flex flex-row gap-3 items-center font-extrabold">
+        <svg width="16" height="18" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.48635 12.2498C8.09508 12.2498 7.77686 11.9317 7.77686 11.5405C7.77686 11.1492 8.09508 10.831 8.48635 10.831H13.1362C13.3815 10.831 13.5812 10.6316 13.5812 10.3864V1.86345C13.5812 1.61827 13.3816 1.41885 13.1362 1.41885H8.48635C8.09508 1.41885 7.77686 1.10062 7.77686 0.709346C7.77686 0.318146 8.09508 0 8.48635 0H13.1362C14.1639 0 15 0.835946 15 1.86345V10.3864C15 11.4138 14.164 12.2498 13.1362 12.2498H8.48635Z" fill="white">
+
+          </path>
+          <path d="M5.59298 10.7116C5.40352 10.7116 5.22533 10.6378 5.09138 10.5038C4.95735 10.3698 4.88355 10.1917 4.88355 10.0022C4.88355 9.81269 4.95735 9.63463 5.09138 9.50061L7.75793 6.83384H0V5.41483H7.75793L5.09138 2.74799C4.95735 2.61411 4.88355 2.43606 4.88355 2.24654C4.88355 2.05701 4.95735 1.87904 5.09138 1.74486C5.22533 1.61099 5.40345 1.53711 5.59305 1.53711C5.7825 1.53711 5.96055 1.61091 6.0945 1.74486L9.97223 5.62274C10.1063 5.75661 10.18 5.93481 10.1801 6.12434C10.18 6.31379 10.1063 6.49191 9.97223 6.62594L6.0945 10.5037C5.96063 10.6378 5.78258 10.7116 5.59298 10.7116Z" fill="white">
+
+          </path>
+        </svg>
+        Connect
+      </div>
+    </button>
+  </div>
+  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row pt-5 underline" href="/dashboard">
+    Continue without connecting
+  </a>
+  <div class="font-nunito md:text-sm text-base  pt-10 font-bold">
+    Don't have a wallet yet?
+  </div>
+  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row text-primary underline" target="_blank" href="https://metamask.io/download.html">
+    Get one with Metamask
+  </a>
+ </div>
+</div>
+</body>
+</html>
