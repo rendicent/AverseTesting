@@ -12,3 +12,5 @@ The App Problem has something to do with the webkit and maxcontent on a mediaque
 }
 
 and something to do with w-full being crossed out or not good luck.
+
+update: Previously Failed to look closer at the width and compare and it was the width property that was obvious look out the box next time.

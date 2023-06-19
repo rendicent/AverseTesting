@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap">
   <link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+ 
   <link rel="stylesheet" href="app.css">
   <link rel="icon" href="Pictures/triangle.ico"/>
   <title>Averse Finance</title>
@@ -33,13 +34,16 @@
     }
 
     .bg-purple {
-      background-color: #551a8b; /* Darker purple */
+      background-image: linear-gradient(to right, #2e00ce, #4b00ff, #5a17ff, #3e00eb);
+    /* background-color: #551a8b;  Darker purple */
       color: white;
       font-weight: bold;
       font-size: 20px;
       padding: 16px 40px;
       cursor: pointer;
       z-index: 1;
+      border-color: #0055ff;
+      
     }
 
     .bg-purple::before {
@@ -96,10 +100,10 @@
     border-color: rgb(137 60 253/var(--tw-border-opacity));
 }
 
-.w-full {
+/* .w-full {
     width: 100%;
 }
-
+ */
 .rounded-4xl {
     border-radius: 2.1875rem;
 }
@@ -151,10 +155,15 @@
  </div>
 </nav>
 
- <div class="h-[70vh] fixed flex flex-col items-center justify-center place-content-center px-4 w-full max-w-screen-xl text-white md:px-0"><div></div><div class="font-qanelas-soft md:text-3xl text-xl mb-4 text-center font-extrabold">Connect your wallet</div>
+ <div class="h-[70vh] fixed flex flex-col items-center justify-center place-content-center px-4 w-full max-w-screen-xl text-white md:px-0" id="container">
+  <div></div>
+  <div class="font-qanelas-soft md:text-3xl  mb-4 text-center font-extrabold  ">Connect your wallet</div>
+
+  
+  
  <div class="rounded-4xl p-2 bg-main-transparent-gradient text-white border border-[#4d6c90] flex flex-col items-center pb-9 pt-12 px-8 w-full sm:px-11 md:w-max">
-  <div class="flex items-center ">
-    <button class="font-nunito md:text-sm font-bold transform-gpu ease-in-out active:scale-110 duration-150 flex flex-row items-center disabled:brightness-100 text-sm text-center focus:outline-none justify-center hover:brightness-125 flex-nowrap focus:none rounded-full disabled:bg-disabled bg-primary hover:bg-primary text-white px-10 py-4 w-full shadow-glow-primary md:px-24">
+  <div class="flex items-center growbutton">
+    <button class="shadow-glow-primary bg-purple md:text-sm font-bold transform-gpu ease-in-out active:scale-110 duration-150 flex flex-row items-center disabled:brightness-100 text-sm text-center focus:outline-none justify-center hover:brightness-125 flex-nowrap focus:none rounded-full disabled:bg-disabled bg-primary hover:bg-primary text-white px-10 py-4 w-full shadow-glow-primary md:px-24">
       <div class="font-nunito text-lg  flex flex-row gap-3 items-center font-extrabold">
         <svg width="16" height="18" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.48635 12.2498C8.09508 12.2498 7.77686 11.9317 7.77686 11.5405C7.77686 11.1492 8.09508 10.831 8.48635 10.831H13.1362C13.3815 10.831 13.5812 10.6316 13.5812 10.3864V1.86345C13.5812 1.61827 13.3816 1.41885 13.1362 1.41885H8.48635C8.09508 1.41885 7.77686 1.10062 7.77686 0.709346C7.77686 0.318146 8.09508 0 8.48635 0H13.1362C14.1639 0 15 0.835946 15 1.86345V10.3864C15 11.4138 14.164 12.2498 13.1362 12.2498H8.48635Z" fill="white">
@@ -168,16 +177,26 @@
       </div>
     </button>
   </div>
-  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row pt-5 underline" href="/dashboard">
+  <br>
+  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row pt-5 underline text-white" href="/dashboard">
     Continue without connecting
   </a>
+  <br>
   <div class="font-nunito md:text-sm text-base  pt-10 font-bold">
     Don't have a wallet yet?
   </div>
-  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row text-primary underline" target="_blank" href="https://metamask.io/download.html">
+  <br>
+  <a class="font-nunito md:text-sm text-base hover:opacity-70 cursor-pointer flex gap-2 items-center flex-row text-primary underline text-blue" target="_blank" href="https://metamask.io/download.html">
     Get one with Metamask
   </a>
- </div>
+  </div>
+ 
 </div>
+<script>
+  
+
+   
+  
+</script>
 </body>
 </html>
