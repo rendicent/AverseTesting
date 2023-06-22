@@ -1,0 +1,1 @@
+Your doing this wrong you need to make the actual Dapp in Pure React.
