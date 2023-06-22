@@ -1,6 +1,6 @@
 import { HomeContext } from "@/contexts/stakingContext";
 import { useContext, useState } from "react";
-import Form from "./Form";
+import Form from "../Assets/Form";
 import Modal from "./Modal";
 
 function Staking() {
