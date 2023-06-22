@@ -31,7 +31,7 @@ export function HomeProvider(props) {
         });
 
         if (accounts.length > 0 && stakingContractOwnerFromCall.toLowerCase() === accounts[0].toLowerCase()) {
-          console.log("andar aaya");
+          console.log("Came in");
           setIsOwner(true);
         } else {
           setIsOwner(false);
