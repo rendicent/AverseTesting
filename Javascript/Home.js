@@ -1,5 +1,5 @@
 import { Fragment, useContext } from "react";
-import CollectReward from "./CollectReward";
+import CollectReward from "../Assets/CollectReward";
 import Withdraw from "./Withdraw";
 import Staking from "./Staking";
 import { ContractDataContext } from "@/contexts/contractDataContext";
